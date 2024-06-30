@@ -1,0 +1,15 @@
+/* src/components/FeatureSection.css */
+.feature {
+    border: 2px solid blue; /* Add a white outline */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
+    color: white;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

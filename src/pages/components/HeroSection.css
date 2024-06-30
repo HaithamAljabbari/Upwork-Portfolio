@@ -1,0 +1,237 @@
+/* General Container Styling */
+.hero-container {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+    position: relative; /* Relative positioning for the container */
+}
+
+.svg-obj {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.path {
+    fill: white;
+    fill-opacity: 0;
+    stroke: white;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 860;
+    stroke-dashoffset: 860;
+    animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Button Styling */
+.button-29, .button-59 {
+    align-items: center;
+    appearance: none;
+    border: 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.button-29 {
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    color: #fff;
+}
+
+.button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.button-59 {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 24px;
+    padding: 0 17px;
+    text-align: center;
+    width: 30%;
+}
+
+.button-59:focus,
+.button-59:hover {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+.button-59:active {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .button-59 {
+        min-width: 170px;
+    }
+}
+
+/* Background Image Styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+    opacity: 0.3; /* Optional: Add transparency for a more subtle effect */
+}
+
+/* Content Wrapper Styling */
+.content-wrapper {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    z-index: 1; /* Ensure content is above background image */
+}
+
+/* Hero Content Styling */
+.hero-content {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    padding-right: 20px; /* Space between text and image */
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 1200px;
+    flex: 0 0 45%; /* Adjust width as needed */
+    max-width: 1200px; /* Max width of image */
+    height: auto;
+    object-fit: contain;
+    animation: rotation 100s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Earnings Styling */
+.earning1, .earning2, .earning3 {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.5); /* Optional: add a background color for readability */
+    padding: 10px;
+    color: #fff; /* Ensure text is visible */
+    z-index: 1; /* Ensure it's above the background but below other interactive elements */
+    max-width: 250px; /* Ensure a reasonable max-width */
+}
+
+.earning1 {
+    top: 50%;
+    left: 5%;
+}
+
+.earning2 {
+    top: 30%;
+    right: 5%;
+}
+
+.earning3 {
+    bottom: 5%;
+    left: 20%;
+}
+
+/* General Container Styling */
+.hero-container {
+    overflow: hidden; /* Ensure no overflow issues */
+    position: relative; /* Relative positioning for the container */
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+/* Earnings Styling */
+.earning1, .earning2, .earning3 {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.5); /* Optional: add a background color for readability */
+    padding: 10px;
+    color: #fff; /* Ensure text is visible */
+    z-index: 1; /* Ensure it's above the background but below other interactive elements */
+    max-width: 250px; /* Ensure a reasonable max-width */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.earning1 {
+    top: 20%; /* Adjusted to a safe visible area */
+    left: 55%;
+}
+
+.earning2 {
+    top: 50%; /* Center vertically */
+    right: 5%;
+    transform: translateY(-50%); /* Center the text vertically */
+}
+
+.earning3 {
+    bottom: 40%; /* Adjusted to a safe visible area */
+    left: 70%;
+}
+
+/* Ensuring proper text visibility and positioning */
+.earning1, .earning2, .earning3 {
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+
