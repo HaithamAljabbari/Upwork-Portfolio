@@ -138,7 +138,7 @@ export const SolarSystemScene = () => {
         >
           <h1>My ThreeJS work</h1>
           <p>3D Space models on my Github</p>
-          <a href="/workOne"><button className="rotate-button" >Previous Work Example</button></a>
+          <a href="https://crypto-site-git-main-haithamaljabbaris-projects.vercel.app/"><button className="rotate-button" >Next work Example</button></a>
         </motion.div>
       </div>
     </div>
